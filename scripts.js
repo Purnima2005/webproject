@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".btn").forEach(button => {
         button.addEventListener("click", function (event) {
             event.preventDefault(); 
-            window.open("https://github.com/Purnima2005-github", "_blank"); 
+            window.open("https://github.com/Purnima2005", "_blank"); 
         });
     });
 
