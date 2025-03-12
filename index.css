@@ -92,27 +92,27 @@
 
 .project {
     display: flex;
-    overflow-x: auto; /* Enables horizontal scrolling */
-    overflow-y: hidden; /* Hides vertical scrolling */
-    scrollbar-width: thin; /* Makes scrollbar small in Firefox */
-    scrollbar-color: rgba(255, 255, 255, 0.5) transparent; /* Custom color for Firefox */
+    overflow-x: auto; 
+    overflow-y: hidden; 
+    scrollbar-width: thin; 
+    scrollbar-color: rgba(255, 255, 255, 0.5) transparent;
 }
 
 .project::-webkit-scrollbar {
-    height: 5px; /* Makes the scrollbar smaller */
+    height: 5px;
 }
 
 .project::-webkit-scrollbar-track {
-    background: transparent; /* Transparent track */
+    background: transparent; 
 }
 
 .project::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.5); /* Light-colored scrollbar */
-    border-radius: 10px; /* Rounded edges */
+    background: rgba(255, 255, 255, 0.5); 
+    border-radius: 10px; 
 }
 
 .project::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 255, 255, 0.8); /* Slightly more visible on hover */
+    background: rgba(255, 255, 255, 0.8); 
 }
 
 #a, #b, #c, #d{
@@ -214,6 +214,35 @@ box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 #contact button:hover {
     background: rgb(126, 12, 12);
 }
+
+#confirmationModal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: black;
+    text-align: center;
+}
+
+#confirmationModal button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: rgb(126, 12, 12);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#confirmationModal button:hover {
+    background-color: rgb(126, 12, 12);
+}
+
 
 
 
