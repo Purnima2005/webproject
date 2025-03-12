@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const sections = {
-        home: document.getElementById("second"),
+        home: document.getElementById("about me"),
         about: document.getElementById("third"),
         project: document.getElementById("fourth"),
         contact: document.getElementById("contact")
