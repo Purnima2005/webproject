@@ -8,8 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function showSection(sectionId) {
         Object.values(sections).forEach(section => section.style.display = "none");
-
-
         sections[sectionId].style.display = "block";
     }
 
@@ -24,4 +22,27 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+
+    document.querySelectorAll(".btn").forEach(button => {
+        button.addEventListener("click", function (event) {
+            event.preventDefault(); 
+            window.open("https://github.com/Purnima2005-github", "_blank"); 
+        });
+    });
+
+
+    const contactForm = document.querySelector("#contact form");
+    contactForm.addEventListener("submit", function (event) {
+        event.preventDefault(); 
+
+    
+        const modal = document.getElementById("confirmationModal");
+        modal.style.display = "block";
+    });
+
+   
+    window.closeModal = function () {
+        const modal = document.getElementById("confirmationModal");
+        modal.style.display = "none";
+    };
 });
